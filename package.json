@@ -25,6 +25,7 @@
   "browserslist": ">0.25%, not dead",
   "devDependencies": {
     "@babel/core": "^7.24.7",
+    "@babel/eslint-parser": "^7.24.7",
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.24.7",
     "babel-loader": "^9.1.3",

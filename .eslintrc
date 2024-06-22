@@ -1,7 +1,8 @@
 {
+  "parser": "@babel/eslint-parser",
   "env": {
     "browser": true,
-    "es2021": true,
+    "es6": true,
     "node": true
   },
   "extends": [
@@ -10,23 +11,21 @@
     "airbnb"
   ],
   "parserOptions": {
-    "ecmaVersion": 12,
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true
+    "requireConfigFile": false, // Не требует наличие конфигурационного файла Babel
+    "babelOptions": {
+      "presets": ["@babel/preset-env"] // или другие пресеты, которые вы используете
     }
   },
   "plugins": [
     "react"
   ],  
   "rules": {
- "semi":"off",
- "comma-spacing":"off",
- "no-console":"off",
- "quotes":"off",
- "no-unused-vars":"warn",
- "comma-dangle":"off",
- "no-confusing-arrow":"off"
-    
+   "semi":"off",
+   "comma-spacing":"off",
+   "no-console":"off",
+   "quotes":"off",
+   "no-unused-vars":"warn",
+   "comma-dangle":"off",
+   "no-confusing-arrow":"off"
   }
 }
